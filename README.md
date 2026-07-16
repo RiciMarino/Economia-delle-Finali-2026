@@ -1,43 +1,27 @@
-# Economia delle Finali 2026
+# Report incassi Finali 2026
 
-Dashboard dedicata alle **Finali dei Campionati Nazionali degli sport individuali**.
+La dashboard distingue:
 
-## Origine dei dati
+- **Presidenza Nazionale (PN)**
+- **Comitati territoriali**
 
-Il sito non utilizza più il foglio pivot `conti`. I dati sono letti direttamente dal foglio:
+Per gli incassi territoriali viene riportato anche il Comitato destinatario.
 
-`file_cassa_individuali`
+## File da caricare su GitHub
 
-Colonne utilizzate:
+- `index.html`
+- `data.json`
+- `logo_csi.jpg`
 
-- **B**: Campionato nazionale
-- **G**: codice società
-- **L**: tipologia di incasso
-- **N**: importo complessivo
-- **O**: Comitato
-- **R**: quota pagata successivamente tramite Link da portale
+## File da tenere sul computer
 
-La quota della colonna R viene sottratta dalla modalità indicata in L e classificata separatamente come **Link da portale**.
-
-## File del progetto
-
-- `index.html`: dashboard completa, con dati incorporati.
-- `data.json`: dati elaborati.
-- `update_data.py`: rigenera `data.json` e aggiorna i dati incorporati nell'HTML.
-- `logo_csi.jpg`: logo dell'intestazione.
-- `Report_incassi_quote_pivot_sistemata.xlsx`: file Excel sorgente.
+- `Report_incassi_quote_DEF.xlsx`
+- `update_data.py`
+- una copia di `index.html`
+- una copia di `data.json`
 
 ## Aggiornamento
 
-1. Sostituire il file Excel nella cartella.
-2. Eseguire:
-
-```bash
-python update_data.py
-```
-
-3. Caricare su GitHub almeno:
-   - `index.html`
-   - `data.json`
-
-Il selettore standard “Mostra 25 elementi” è stato rimosso per evitare il difetto grafico e rendere l'interfaccia più pulita.
+1. Mettere Excel, `index.html`, `data.json` e `update_data.py` nella stessa cartella.
+2. Avviare `update_data.py`.
+3. Caricare su GitHub il nuovo `index.html` e il nuovo `data.json`.
