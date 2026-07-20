@@ -1,27 +1,23 @@
-# Report incassi Finali 2026
+# Economia delle Finali 2026
 
-La dashboard distingue:
+## File pubblici necessari su GitHub
 
-- **Presidenza Nazionale (PN)**
-- **Comitati territoriali**
-
-Per gli incassi territoriali viene riportato anche il Comitato destinatario.
-
-## File da caricare su GitHub
-
-- `index.html`
-- `data.json`
+- `index.html` — pagina iniziale di scelta
+- `individuali.html` — report sport individuali
+- `squadre.html` — report sport di squadra
 - `logo_csi.jpg`
+
+I dati sono incorporati nelle due pagine HTML. I file JSON non sono necessari al funzionamento pubblico, ma sono inclusi come copia strutturata dei dati.
+
+## File facoltativi su GitHub
+
+- `data_squadre.json`
+- `data_individuali.json`
 
 ## File da tenere sul computer
 
-- `Report_incassi_quote_DEF.xlsx`
-- `update_data.py`
-- una copia di `index.html`
-- una copia di `data.json`
+- Excel sorgenti
+- script di aggiornamento
+- copie delle pagine HTML
 
-## Aggiornamento
-
-1. Mettere Excel, `index.html`, `data.json` e `update_data.py` nella stessa cartella.
-2. Avviare `update_data.py`.
-3. Caricare su GitHub il nuovo `index.html` e il nuovo `data.json`.
+Per aggiornare gli sport di squadra, mettere `completo.xlsx`, `squadre.html` e `update_squadre.py` nella stessa cartella ed eseguire lo script.
