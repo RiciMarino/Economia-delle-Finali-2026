@@ -1,23 +1,17 @@
 # Economia delle Finali 2026
 
-## File pubblici necessari su GitHub
+## File da caricare su GitHub
 
-- `index.html` — pagina iniziale di scelta
-- `individuali.html` — report sport individuali
-- `squadre.html` — report sport di squadra
+- `index.html`
+- `individuali.html`
+- `squadre.html`
 - `logo_csi.jpg`
 
-I dati sono incorporati nelle due pagine HTML. I file JSON non sono necessari al funzionamento pubblico, ma sono inclusi come copia strutturata dei dati.
+I dati sono incorporati direttamente nelle pagine HTML. I JSON non sono necessari al funzionamento pubblico.
 
-## File facoltativi su GitHub
+## Modifiche incluse
 
-- `data_squadre.json`
-- `data_individuali.json`
-
-## File da tenere sul computer
-
-- Excel sorgenti
-- script di aggiornamento
-- copie delle pagine HTML
-
-Per aggiornare gli sport di squadra, mettere `completo.xlsx`, `squadre.html` e `update_squadre.py` nella stessa cartella ed eseguire lo script.
+- collegamento “Torna alla scelta” anche negli sport individuali;
+- “non previsto” per i contributi viaggio S&GO! quando le colonne R e S sono vuote;
+- correzione del menu “Mostra”;
+- titolo evento abbreviato nella sola tabella Dettaglio degli sport di squadra.
